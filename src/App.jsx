@@ -1,18 +1,16 @@
 import { Header } from "./components/Header/index.jsx"
 import { Resume } from "./components/Resume/index.jsx"
+import { Form } from "./components/Form/index.jsx"
+
 import { GlobalStyle } from "./styles/global.js"
 
-function App() {
-
-
+export default function App() {
   return (
     <>
       <Header />
       <Resume />
-      <div>app</div>
+      <Form />
       <GlobalStyle />
     </>
   )
 }
-
-export default App
