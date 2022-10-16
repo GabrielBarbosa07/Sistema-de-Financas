@@ -37,17 +37,22 @@ export const RadioGroup = styled.div`
   align-items: center;
 
   input {
-    margin-left: 20px;
-    margin-top: 0;
+    margin: 0 5px 0 20px;
     accent-color: #000;
   }
 `;
 
 export const Button = styled.button`
-  padding: 5px 10px;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
-  background-color: teal;
+  background-color: #008080;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.74;
+  }
 `;
