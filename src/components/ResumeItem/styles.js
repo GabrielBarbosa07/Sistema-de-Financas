@@ -8,12 +8,13 @@ export const Container = styled.div`
   border-radius: 5px;
   padding: 5px 15px;
   width: 30%;
+  box-shadow: 0px 0px 7px #ccc;
 
   @media (max-width: 750px) {
     width: 20%;
 
     p {
-      font-size: 12px;
+      font-size: 20px;
     }
     span {
       font-size: 20px;
@@ -35,6 +36,7 @@ export const Header = styled.header`
   svg {
     width: 25px;
     height: 25px;
+    cursor: text;
   }
 `;
 export const HeaderTitle = styled.p`

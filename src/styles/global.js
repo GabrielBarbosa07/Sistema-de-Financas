@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "inter", sans-serif;
     background-color: #f2f2f2;
+    min-width: 390px;
 }
 `;

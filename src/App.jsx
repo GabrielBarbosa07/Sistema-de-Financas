@@ -4,7 +4,6 @@ import { Form } from "./components/Form/index.jsx"
 
 import { GlobalStyle } from "./styles/global.js"
 import { useEffect, useState } from "react"
-import { json } from "express"
 
 export default function App() {
   const data = localStorage.getItem("transactions")
@@ -43,11 +42,11 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="App">
       <Header />
       <Resume inCome={inCome} expense={expense} total={total} />
-      <Form />
+      <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList} />
       <GlobalStyle />
-    </>
+    </div>
   )
 }
