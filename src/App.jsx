@@ -15,24 +15,30 @@ export default function App() {
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
+    //Calculating the amount of expenses
     const amountExpense = transactionsList
       .filter((item) => item.expense)
       .map((transaction) => Number(transaction.amount))
 
+    //Calculating the amount of income
     const amountInCome = transactionsList
       .filter((item) => !item.expense)
       .map((transaction) => Number(transaction.amount))
 
+    //Adding the total of expenses and income
     const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2)
     const inCome = amountInCome.reduce((acc, cur) => acc + cur, 0).toFixed(2)
 
+    //Calculating the difference between income and expenses
     const total = Math.abs(inCome - expense).toFixed(2)
 
+    //Updating the states
     setInCome(`R$ ${inCome}`)
     setExpense(`R$ ${expense}`)
     setTotal(`${Number(inCome) < Number(expense) ? "-" : ""}R$ ${total}`)
   }, [transactionsList])
 
+  //Updating the state of transactions with the new transaction
   const handleAdd = (transaction) => {
     const newArrayTransactions = [...transactionsList, transaction]
 

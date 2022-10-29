@@ -20,6 +20,10 @@ export const Container = styled.div`
 export const InputContent = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 750px) {
+    flex: 1;
+  }
 `;
 
 export const Label = styled.label``;

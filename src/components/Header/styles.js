@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 150px;
   text-align: center;
   background: #015c92;
-  width: 100vw;
+  width: 100%;
 `;
 export const Header = styled.h1``;
 

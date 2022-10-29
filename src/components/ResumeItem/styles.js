@@ -44,6 +44,8 @@ export const HeaderTitle = styled.p`
 `;
 
 export const Total = styled.span`
+  width: 100%;
   font-size: 30px;
+  word-wrap: break-word;
   font-weight: bold;
 `;

@@ -53,7 +53,7 @@ export function Form({ handleAdd, transactionsList, setTransactionsList }) {
         </C.RadioGroup>
         <C.Button onClick={handleSave}>Adicionar</C.Button>
       </C.Container>
-      
+
       <Grid itens={transactionsList} setItens={setTransactionsList} />
     </>
   )
